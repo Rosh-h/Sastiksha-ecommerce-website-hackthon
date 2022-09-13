@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="logo.png" class="logo">
+            <ul>
+                <li><a href="#"> Home</a></li>
+                <li><a href="#"> NIT jalandhar</a></li>
+                <li><a href="#"> Website Intro</a></li>
+                <li><a href="#"> Developer</a></li>
+            </ul>
+        </div>
+        <div class="content">
+        <H1> Sastiksha </H1>
+        <p>
+            <br> Welcome to sastiksha</br> <br>We deal in old books and as Local market 
+            promotor!!.
+        </p>
+        <div>
+        <button type="button"> Sample </button>
+    </div>
+    </div>
+    <section class="forms-section">
+        <div class="forms">
+          <div class="form-wrapper is-active">
+            
+              <button type="button" class="switcher switcher-login">
+              Login
+              <span class="underline"></span>
+            </button>
+            <form class="form form-login">
+              <fieldset>
+                <legend>Please, enter your email and password for login.</legend>
+                <div class="input-block">
+                  <label for="login-email">E-mail</label>
+                  <input id="login-email" type="email" required />
+                </div>
+                <div class="input-block">
+                  <label for="login-password">Password</label>
+                  <input id="login-password" type="password" required />
+                </div>
+                <div class="input-block">
+                  <label for="adress">Address</label>
+                  <input id="login-password" type="text" required />
+                </div>
+              </fieldset>
+              <button type="submit"<a href="Main.html" class="btn-login"></a> Login</button>
+            </form>
+          </div>
+          <div class="form-wrapper">
+            <button type="button" class="switcher switcher-signup">
+              Sign Up
+              <span class="underline"></span>
+            </button>
+            <form class="form form-signup">
+              <fieldset>
+                <legend>
+                  Please, enter your email, password and password confirmation for
+                  sign up.
+                </legend>
+                <div class="input-block">
+                  <label for="signup-username">Username </label>
+                  <input id="signup-email" type="text" required />
+                </div>
+                <div class="input-block">
+                  <label for="signup-email">E-mail</label>
+                  <input id="signup-email" type="email" required />
+                </div>
+                <div class="input-block">
+                  <label for="signup-password">Password</label>
+                  <input id="signup-password" type="password" required />
+                </div>
+              </fieldset>
+              
+              <button type="submit"><a href="Main.html" class="btn-signup">sign-up</a></button> 
+            </form>
+          </div>
+        </div>
+      </section>
+      <style>
+    .forms {
+        display: flex;
+        align-items:flex-start;
+        margin-top: -5px;
+        float: left;
+      }
+
+      .form-wrapper {
+        animation: hideLayer 0.3s ease-out forwards;
+      }
+
+      .form-wrapper.is-active {
+        animation: showLayer 0.3s ease-in forwards;
+      }
+
+      @keyframes showLayer {
+        50% {
+          z-index: 1;
+        }
+        100% {
+          z-index: 1;
+        }
+      }
+
+      @keyframes hideLayer {
+        0% {
+          z-index: 1;
+        }
+        49.999% {
+          z-index: 1;
+        }
+      }
+
+      .switcher {
+        position: relative;
+        cursor: pointer;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0;
+        text-transform: uppercase;
+        font-family: inherit;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        color: rgb(24, 196, 44);
+        background-color: transparent;
+        border: none;
+        outline: none;
+        transform: translateX(0);
+        transition: all 0.3s ease-out;
+        position: absolute;
+      }
+
+      
+.form-wrapper.is-active .switcher-login{
+        color: white;
+        position: absolute;
+        font-size: larger;
+        font-weight: 300;
+        background-color: rgba(10, 11, 23, 0.887);
+        transform: translateX(90px);
+        font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent
+    
+    
+    
+  }
+      
+
+      .form-wrapper.is-active .switcher-signup {
+        color: white;
+        position: absolute;
+        font-size: larger;
+        font-weight: 300;
+        transform: translateX(-90px);
+    background-color:rgb(20, 18, 40);
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent
+      }
+
+     
+
+      .switcher-login .underline::before {
+        transform: translateX(101%);
+      }
+
+      .switcher-signup .underline::before {
+        transform: translateX(-101%);
+      }
+
+      .form-wrapper.is-active .underline::before {
+        transform: translateX(0);
+      }
+
+      .form {
+        overflow: hidden;
+        min-width: 260px;
+        margin-top: 50px;
+        padding: 30px 25px;
+        border-radius: 35px;
+        transform-origin: right;
+      }
+
+      .form-login {
+        animation: hideLogin 0.3s ease-out forwards;
+      }
+
+      .form-wrapper.is-active .form-login {
+        animation: showLogin 0.3s ease-in forwards;
+      }
+
+      @keyframes showLogin {
+        0% {
+          background: transparent;
+          transform: translate(40%, 10px);
+        }
+        50% {
+          transform: translate(0, 0);
+        }
+        100% {
+          background-color: transparent;
+          transform: translate(35%, -20px);
+        }
+      }
+
+      @keyframes hideLogin {
+        0% {
+          background-color: transparent;
+          background-image: 'st.jpg';
+          transform: translate(35%, -20px);
+        }
+        50% {
+          transform: translate(0, 0);
+        }
+        100% {
+          background: transparent;
+          transform: translate(40%, 10px);
+        }
+      }
+
+      .form-signup {
+        animation: hideSignup 0.3s ease-out forwards;
+      }
+
+      .form-wrapper.is-active .form-signup {
+        animation: showSignup 0.3s ease-in forwards;
+      }
+
+      @keyframes showSignup {
+        0% {
+          background: transparent;
+          transform: translate(-40%, 10px) scaleY(0.8);
+        }
+        50% {
+          transform: translate(0, 0) scaleY(0.8);
+        }
+        100% {
+          background-color: transparent;
+          transform: translate(-35%, -20px) scaleY(1);
+        }
+      }
+
+      @keyframes hideSignup {
+        0% {
+          background-color: transparent;
+          transform: translate(-35%, -20px) scaleY(1);
+        }
+        50% {
+          transform: translate(0, 0) scaleY(0.8);
+        }
+        100% {
+          background: transparent;
+          transform: translate(-40%, 10px) scaleY(0.8);
+        }
+      }
+
+      .form fieldset {
+        position: relative;
+        opacity: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        transition: all 0.3s ease-out;
+      }
+
+      .form-login fieldset {
+        transform: translateX(-50%);
+      }
+
+      .form-signup fieldset {
+        transform: translateX(50%);
+      }
+
+      .form-wrapper.is-active fieldset {
+        opacity: 1;
+        transform: translateX(0);
+        transition: opacity 0.4s ease-in, transform 0.35s ease-in;
+      }
+
+      .form legend {
+        position: absolute;
+        overflow: hidden;
+        width: 1px;
+        height: 1px;
+        clip: rect(0 0 0 0);
+      }
+
+      .input-block {
+        margin-bottom: 20px;
+      }
+
+      .input-block label {
+        font-size: 20px;
+        color: yellow;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+
+      .input-block input {
+        display: block;
+        width: 70%;
+        margin-top: 8px;
+        padding-right: 15px;
+        padding-left: 15px;
+        font-size: 20px;
+        line-height: 28px;
+        color: white;
+        background: transparent;
+        border-radius: 25px;
+        font-weight: bold;
+    border: 2px solid #009688;
+    
+      }
+
+      .form [type="submit"] {
+        opacity: 0;
+        min-width: 80px;
+        margin: 2px auto 10px;
+        font-size: 35px;
+        line-height: 10px;
+        border-radius: 25px;
+        border: none;
+        background: transparent;
+        border-radius: 25px;
+        font-weight: bold;
+    border: 2px solid #009688;
+        transition: all 0.3s ease-out;
+      }
+
+      .form-wrapper.is-active .form [type="submit"] {
+        opacity: 1;
+        transform: translateX(0);
+        transition: all 0.4s ease-in;
+      }
+
+      .btn-login {
+        color: #16086f;
+        transform: translateX(-30%);
+        font-size: 180px;
+        border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+        
+      }
+
+      .btn-signup {
+        color: #4617c9;
+        transform: translateX(30%);
+        border-radius: 25px;
+    font-weight: bold;
+    background: transparent
+      }
+      .body{
+        width: 1350px;
+        height: 618px;
+      }
+    </style>
+    <script>
+        const switchers = [...document.querySelectorAll(".switcher")];
+  
+        switchers.forEach((item) => {
+          item.addEventListener("click", function () {
+            switchers.forEach((item) =>
+              item.parentElement.classList.remove("is-active")
+            );
+            this.parentElement.classList.add("is-active");
+          });
+        });
+      </script>
+    
+</body>
+</html>

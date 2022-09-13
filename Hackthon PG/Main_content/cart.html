@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="CodeHim">
+  
+  <title>Shopping Cart</title>
+
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="cart.css">
+
+</head>
+
+<body style="background-color:rgb(146, 123, 73);">
+  <header class="intro">
+    <!-- <h1> Sastiksha Shopping Cart</h1> -->
+    <!-- <div><i class="fa-shopping-cart"></i></div> -->
+    <!-- <img src="trolley.png" alt="cart" class="cart"> -->
+    <!-- <a href="https://www.flaticon.com/free-icons/cart" title="cart icons">Cart icons created by Freepik - Flaticon</a> -->
+    <!-- <a href="https://www.flaticon.com/free-icons/cart" title="cart icons">Cart icons created by Freepik - Flaticon</a> -->
+    <!-- <h1><i class="fa fa-shopping-cart"></i></h1> -->
+
+    <main>
+      <nav>
+        <div class="topper">
+          <img src="background.jpeg" alt="booksbackground" class="fixed-top">
+          <div class="center-text">
+            <div class="heading">Sastiksha Shopping Cart </div>
+          </div>
+          <a href="#" target="_blank">
+          <img src="img4.jpeg" alt="cart" class="cart">
+          <div class="mycart">My Cart</div>
+          </a>
+        </div>
+      </nav>
+      <div class="below-nav">
+
+      </div>
+      <div class="container">
+        <h3>fill the cart..</h3>
+        <p>'add to cart'</p>
+        <p>Click 'Empty Cart' .</p>
+        <div id="alerts"></div>
+        <div class="productcont">
+          <div class="product">
+            <h3 class="productname"><img src="img5.jpeg" width="80" height="80"></h3>
+            <p>SASTIKSHA T-SHIRT</p>
+            <p class="price">Rs350</p>
+            <button class="addtocart">Add To Cart</button>
+          </div>
+          <div class="product">
+            <h3 class="productname"><img src="img1.jpeg" width="80" height="80"></h3>
+            <p>IIT-JEE</p>
+            <p class="price">Rs150</p>
+            <button class="addtocart">Add To Cart</button>
+          </div>
+          <div class="product">
+            <h3 class="productname"><img src="img2.jpeg" width="80" height="80"></h3>
+            <p>FICTIONAL BOOKS</p>
+            <p class="price">Rs200</p>
+            <button class="addtocart">Add To Cart</button>
+          </div>
+          <div class="product">
+            <h3 class="productname"><img src="img3.jpeg" width="80" height="80"></h3>
+            <p>GATE PREP BOOKS</p>
+            <p class="price">Rs250</p>
+            <button class="addtocart">Add To Cart</button>
+          </div>
+        </div>
+        <div class="cart-container">
+          <h2 class="cart-head">My Cart</h2>
+          <table class="table center">
+            <div class="table-headings">
+              <div class="p-name">Product Name</div>
+              <div class="p-name">Price</div>
+            </div>
+            <!-- <thead>
+              <tr>
+                <th><strong>Product</strong></th>
+                <th><strong>Price</strong></th>
+              </tr>
+            </thead> -->
+            <tbody id="carttable">
+            </tbody>
+          </table>
+          <hr>
+          <div class="divider">
+          <table id="carttotals">
+            <tr>
+              <td><strong>Items</strong></td>
+              <td><strong>Total</strong></td>
+            </tr>
+            <tr>
+              <td>x <span id="itemsquantity">0</span></td>
+
+              <td>RS<span id="total">0</span></td>
+            </tr>
+          </table>
+        </div>
+
+
+          <div class="cart-buttons">
+            <button id="emptycart">Empty Cart</button>
+            <button id="checkout"> <a href="payment.html"> Checkout </a>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </main>
+    <footer>
+      <div class="developers">
+        <div class="center">
+          Our Developers
+        </div>
+        <div class="followus">
+          <div>Instagram</div>
+          <div>Facebook</div>
+          <div>Email</div>
+        </div>
+      </div>
+    </footer>
+    <script src="cart.js"></script>
+</body>
+
+</html>

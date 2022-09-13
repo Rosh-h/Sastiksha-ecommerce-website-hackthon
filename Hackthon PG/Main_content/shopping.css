@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+header{
+  position: sticky;
+  top: 0;
+  background: slateblue;
+  height: 66px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.rightBox{
+    display: flex;
+    margin: 12px;
+  }
+
+.left img{
+  width: 64px;
+  height: 43px;
+}
+
+.container{ 
+  padding: 0 10vw; 
+}
+
+.containerHeader{ 
+  padding: 0 10vw; 
+}
+
+nav{
+  font-size: 12px;
+  padding-top: 14px;
+}
+
+nav ul li{
+  list-style: none;
+  padding: 0 12px;
+}
+
+.section1{
+  background: rgb(220, 237, 126); 
+  
+}
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 60vh;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.search{
+  width: 34vw;
+    padding: 7px 17px;
+    border: 0.5px solid grey;
+    background: #f7f8fd;
+    border-radius: 5px;
+}
+
+.homeImg{
+  width: 100%;
+  height: 65vh;
+  margin: 12px 0;
+}
+.home2Img{
+  width: 100%;
+  height: 60vh;
+  margin: 12px 0;
+
+}
+
+.itemImg{
+  width: 30%;
+  height: 35vh;
+  margin: 6px 12px;
+}
+
+footer{
+  padding: 13px;
+  height: 0vh;
+  text-align: center;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  background: skyblue;
+}
+.homeImg3{
+  width: 20%;
+  height: 25vh;
+  margin: 6px 12px;
+  
+}
+.tall{
+  min-height: 40vh;
+}
+
+@media (max-width: 450px) { 
+.search {
+    width: 72vw; 
+}
+}
+
+@media (max-width: 1550px) { 
+
+  nav ul li {
+    list-style: none;
+    padding: 0 4px;
+    font-size: 10px;
+}
+  
+
+  .containerHeader {
+    padding: 0 2vw;
+}
+  
+header{ 
+  height:122px;
+}  
+
+  nav{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right{ 
+    flex-direction: column;
+  }
+
+  .rightBox{
+    display: flex;
+    margin: 12px;
+  }
+}
+.devel{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
